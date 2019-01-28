@@ -13,9 +13,15 @@ var links=["https://www.youtube.com/watch?v=Kr4EQDVETuA","https://www.youtube.co
 
 function displaySongInfo(){
     // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
+songs.forEach(function(x){
+    $("#songs").append("<p> " + x + "!</p>");
+});
+    images.forEach(function(x){
+        $("#images").append("<img src= " + x + ">");
+    
+});
 
 }
-
 function emptySongInfo(){
     $("#songs").empty();
     // Use jQuery to empty all of the remaining divs
